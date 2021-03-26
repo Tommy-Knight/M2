@@ -10,7 +10,7 @@
     <link href="css/styles.css" rel="stylesheet">
     <title>Netflix</title>
   </head>
-  <body>
+  <body id="settings">
     <nav id="navBar" class="navbar navbar-expand-lg navbar-dark sticky-top">
       <div class="container-fluid">
         <a class="navbar-brand d-inline-block" href="index.html"><img src="assets\netflix_logo.png" id="netflixLogo"></a>
@@ -31,7 +31,6 @@
             <li class="nav-item">
               <a class="nav-link" href="index.html">My List</a>
             </li>
-
           </ul>
           <form class="d-flex">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -52,131 +51,148 @@
       </div>
     </nav>
 
-    <div class="container ml-5 h4">TV Shows <div class="dropdown d-inline-block">
-      <button class="btn btn-secondary dropdown-toggle mx-5" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">
-        Genre
-      </button>
-      <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenu2">
-        <li><button class="dropdown-item" type="button">Action</button></li>
-        <li><button class="dropdown-item" type="button">Horror</button></li>
-        <li><button class="dropdown-item" type="button">Tommy's Home Movies</button></li>
-      </ul>
-    </div></div>
+    
+    <div class="account-page">
+        <div class="container p-5">
+            <h3>Account</h3>
+            <hr>
+           
+            <div class="row">
+                <div class="col-md-4">
+                    <h6 class="text-muted">MEMBERSHIP & BILLING</h6>
+                    <button class="btn btn-secondary">Cancel Membership</button>
+                </div>
+                <div class="col-md-8">
+                    <div class="d-flex align-items-center justify-content-between mt-2">
+                        <strong>kostathesuperhacker@hotmail.com</strong>
+                        <a class="text-primary">Change account email</a>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-2">
+                        <span class="text-muted">Password : ********</span>
+                        <a class="text-primary">Change password</a>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between mt-2">
+                        <span class="text-muted">Phone : 070707070707 </span>
+                        <a class="text-primary">Change phone number</a>
+                    </div>
+                    <hr>
+                 
+                    <div class="d-flex align-items-center justify-content-between mt-2">
+                        <span>
+                            <img class="image-thumbnail" src="https://th.bing.com/th/id/R211192f9084f0a7e2f97e20020d4363a?rik=jomlrQuwuQS%2bWA&pid=ImgRaw" width="80px">
+                            <strong class="ms-2">kostathesuperhacker@hotmail.com</strong>
+                        </span>
+                        <a class="text-primary">Update payment info</a>
 
-    <div class="container ml-5 my-5">
-      <div class="row">
-    <h5 class="d-none d-md-block">Trending Now</h5></div>
-    <h5 class="d-block d-md-none text-center">Trending Now</h5>
-      <div class="row"> 
-        <div class="col-12 col-md-4 col-lg-2 px-0">
-          <div class="col text-center mb-3 mb-lg-0 px-1">
-          <img class="img-fluid " src="./assets/media/media0.webp" alt="">
-        </div>
-      </div>
-        <div class="col-12 col-md-4 col-lg-2 px-0">
-          <div class="col text-center mb-3 mb-lg-0 px-1">
-          <img class="img-fluid " src="./assets/media/media10.jpg" alt="">
-        </div>
-      </div>
-        <div class="col-12 col-md-4 col-lg-2 px-0">
-          <div class="col text-center mb-3 mb-lg-0 px-1">
-          <img class="img-fluid " src="./assets/media/media1.jpg" alt="">
-        </div>
-      </div>
-        <div class="col-12 col-md-4 col-lg-2 px-0">
-          <div class="col text-center mb-3 mb-lg-0 px-1">
-          <img class="img-fluid " src="./assets/media/media11.jpg" alt="">
-        </div>
-      </div>
-        <div class="col-12 col-md-4 col-lg-2 px-0">
-          <div class="col text-center mb-3 mb-lg-0 px-1">
-          <img class="img-fluid " src="./assets/media/media12.jpg" alt="">
-        </div>
-      </div>
-      <div class="col-12 col-md-4 col-lg-2 px-0">
-        <div class="col text-center mb-3 mb-lg-0 px-1">
-        <img class="img-fluid " src="./assets/media/media13.jpg" alt="">
-      </div>
-     </div>    
-    </div>
-   </div>
-  
-   <div class="container  mb-5 ml-5">
-    <div class="row">
-      <h5 class="d-none d-md-block">Watch it again</h5></div>
-      <h5 class="d-block d-md-none text-center">Watch it again</h5>
-    <div class="row"> 
-      <div class="col-12 col-md-4 col-lg-2 px-0">
-        <div class="col text-center mb-3 mb-lg-0 px-1">
-        <img class="img-fluid " src="./assets/media/media14.webp" alt="">
-      </div>
-    </div>
-      <div class="col-12 col-md-4 col-lg-2 px-0">
-        <div class="col text-center mb-3 mb-lg-0 px-1">
-        <img class="img-fluid " src="./assets/media/media15.jpg" alt="">
-      </div>
-    </div>
-      <div class="col-12 col-md-4 col-lg-2 px-0">
-        <div class="col text-center mb-3 mb-lg-0 px-1">
-        <img class="img-fluid " src="./assets/media/media16.webp" alt="">
-      </div>
-    </div>
-      <div class="col-12 col-md-4 col-lg-2 px-0">
-        <div class="col text-center mb-3 mb-lg-0 px-1">
-        <img class="img-fluid " src="./assets/media/media17.jpg" alt="">
-      </div>
-    </div>
-      <div class="col-12 col-md-4 col-lg-2 px-0">
-        <div class="col text-center mb-3 mb-lg-0 px-1">
-        <img class="img-fluid " src="./assets/media/media18.jpg" alt="">
-      </div>
-    </div>
-    <div class="col-12 col-md-4 col-lg-2 px-0">
-      <div class="col text-center mb-3 mb-lg-0 px-1">
-      <img class="img-fluid " src="./assets/media/media19.webp" alt="">
-    </div>
-   </div>    
-  </div>
- </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end mt-2">
 
- <div class="container">
-  <div class="row">
-    <h5 class="d-none d-md-block">New releases</h5></div>
-    <h5 class="d-block d-md-none text-center">New releases</h5>
-  <div class="row"> 
-    <div class="col-12 col-md-4 col-lg-2 px-0">
-      <div class="col text-center mb-3 mb-lg-0 px-1">
-      <img class="img-fluid " src="./assets/media/media2.webp" alt="">
+                        <a class="text-primary">Billing details</a>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end mt-2">
+
+                        <a class="text-primary">Redeem giftcard or promo code</a>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-end mt-2">
+
+                        <a class="text-primary">Where to buy gift cards?</a>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <h6 class="text-muted">PLAN DETAILS</h6>
+                   
+                </div>
+                <div class="col-md-8">
+                    <div class="d-flex align-items-center justify-content-between mt-2">
+                        <span>
+                            <strong>Standard</strong>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-badge-hd" viewBox="0 0 16 16">
+                                <path d="M7.396 11V5.001H6.209v2.44H3.687V5H2.5v6h1.187V8.43h2.522V11h1.187zM8.5 5.001V11h2.188c1.811 0 2.685-1.107 2.685-3.015 0-1.894-.86-2.984-2.684-2.984H8.5zm1.187.967h.843c1.112 0 1.622.686 1.622 2.04 0 1.353-.505 2.02-1.622 2.02h-.843v-4.06z"/>
+                                <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h12zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2z"/>
+                              </svg>
+                        </span>
+                        <a class="text-primary">Change plan</a>
+                    </div>
+                    
+                </div>
+            </div> 
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <h6 class="text-muted">SETTINGS</h6>
+                   
+                </div>
+                <div class="col-md-8">
+                   <p>
+                    <a class="text-primary">Parent Controls</a>
+                   </p>
+                   <p>
+                    <a class="text-primary">Test Participation</a>
+                   </p>
+                   <p>
+                    <a class="text-primary">Manage downlaod devices</a>
+                   </p>
+                   <p>
+                    <a class="text-primary">Activate a device</a>
+                   </p>
+                   <p>
+                    <a class="text-primary">Recent device streaming activity</a>
+                   </p>
+                   <p>
+                    <a class="text-primary">Signout all devices</a>
+                   </p>
+                </div>
+            </div> 
+            <hr>
+            <div class="row">
+                <div class="col-md-4">
+                    <h6 class="text-muted">MY PROFILE</h6>
+                   
+                </div>
+                <div class="col-md-8">
+                    <div class="d-flex align-items-center justify-content-between mt-2">
+                        <span>
+                            <img src="./assets/avatar.png" width="36px">
+                            <strong class="ms-2">Profile 1</strong>
+                        </span>
+                        <div class="d-flex flex-column">
+                            <a class="text-primary">Manage profiles</a>
+                            <a class="text-primary">Add profile email</a>
+                        </div>
+                        
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-md-4">
+                            <p>
+                                <a class="text-primary">Language</a>
+                               </p>
+                               <p>
+                                <a class="text-primary">Playback settings</a>
+                               </p>
+                               <p>
+                                <a class="text-primary">Subtitle appearence</a>
+                               </p>
+                        </div>
+                        <div class="col-md-4">
+                            <p>
+                                <a class="text-primary">Viewing activity</a>
+                               </p>
+                               <p>
+                                <a class="text-primary">Ratings</a>
+                               </p>
+                              
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
+                </div>
+            </div> 
+        </div>
     </div>
-  </div>
-    <div class="col-12 col-md-4 col-lg-2 px-0">
-      <div class="col text-center mb-3 mb-lg-0 px-1">
-      <img class="img-fluid " src="./assets/media/media20.jpg" alt="">
-    </div>
-  </div>
-    <div class="col-12 col-md-4 col-lg-2 px-0">
-      <div class="col text-center mb-3 mb-lg-0 px-1">
-      <img class="img-fluid " src="./assets/media/media21.webp" alt="">
-    </div>
-  </div>
-    <div class="col-12 col-md-4 col-lg-2 px-0">
-      <div class="col text-center mb-3 mb-lg-0 px-1">
-      <img class="img-fluid " src="./assets/media/media22.webp" alt="">
-    </div>
-  </div>
-    <div class="col-12 col-md-4 col-lg-2 px-0">
-      <div class="col text-center mb-3 mb-lg-0 px-1">
-      <img class="img-fluid " src="./assets/media/media23.webp" alt="">
-    </div>
-  </div>
-  <div class="col-12 col-md-4 col-lg-2 px-0">
-    <div class="col text-center mb-3 mb-lg-0 px-1">
-    <img class="img-fluid " src="./assets/media/media24.jpg" alt="">
-  </div>
- </div>    
-</div>
-</div>
-    <div class="container col-12">
+
+    <div class="container col-12" id="settingsFooter">
     <footer>
           <div class="links">
           <a href="https://www.facebook.com">    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
