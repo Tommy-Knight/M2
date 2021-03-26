@@ -6,16 +6,12 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 #netflixLogo{
     width: 100px;
 }
-#kidsLogo{
+#kidsLogo, #avatar{
     width: 30px;
     margin-left: 5px;
     margin-right: 5px;
 }
-#avatar{
-    width: 30px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
+
 #dropdownMenu2{
     border: 3px solid white;
     background-color: #141414;
@@ -23,4 +19,33 @@ font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 #dropdownMenuButton1{
     background-color: #141414;
     border: 0px
+}
+.navbar{
+    background-color: #141414 !important;
+}
+table {
+    line-height: 1.8;
+  }
+
+.links{
+    margin-top: 50px;
+    margin-left: 0px;
+}
+  #clickableAwesomeFont {
+cursor: pointer
+}
+
+table {
+width: 70%;
+}
+.center {
+margin-left: 0px ;
+margin-right: auto;
+}
+.left { 
+     margin-left: -369px ;
+}
+footerBox{
+    min-height: 100%;
+    position: relative;
 }
