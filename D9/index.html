@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<!--
+ASSIGNMENT RULES
+- The solution must be pushed to the repository and linked to EduFlow by the end of the day.
+- You can google / use StackOverflow BUT we suggest you to use just the material provided.
+- To test the page, just open it with your default browser.
+- Use Bootstrap4.6 classes to render the page.
+- Use containers, rows and cols in order to achieve a great responsive layout.
+
+ASSIGNMENT TOPIC
+You are creating a website to showcase your favourite music albums.
+In this page you'd have a short biography section of yourself, and the top albums of your life, 
+the worst album you ever listened to and everything related to the music you love.
+
+NOTE:
+Most of the times, even the most expert of designers need inspiration.
+Spend 30 minutes surfing the web and searching the best way of rapresenting the album you love the most.
+Could be the Amazon way, the Spotify or Apple music way or some other blog out there.
+-->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- IMPORT ALL THE BOOTSTRAP RELATED CSS & SCRIPTS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <style>
+body {
+  background-image: url(https://getwallpapers.com/wallpaper/full/0/d/f/107701.jpg);
+  background-position: top;
+  background-attachment: fixed;
+  justify-content: center;
+}
+.container {
+  background-color: lightgrey;
+  border: 3px double black;
+  padding: 10px;
+}
+.title {
+  text-align: center;
+  font-size: 25px !important;
+  padding: 20px;
+}
+img {
+  width: 200px;
+  padding: 10px;
+}
+#bio {
+  background-color: lightgrey;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+#rock {
+  width: 100px;
+  height: 100px;
+}
+#fav {
+  font-size: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+#naf {
+  font-size: 10px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+#row{
+  opacity: 1;
+  transition: 1s;
+}
+#button:hover #row{
+  opacity: 0;
+}
+    </style>
+  </head>
+  <body>
+    <!-- EXERCISE 2 
+            Implement a navigation bar using the bootstrap component
+            This navigation bar must link every section in your page
+        -->
+       <div id="navBox"> <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+            <a class="navbar-brand" href="#">Tommy's Musical Memoirs</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav mr-auto" ></ul>
+                <li class="breadcrumb-item" style="display: inline-block!important">
+                  <a class="nav-link" href="#bio" >About Me </a>
+                </li>
+                <li class="breadcrumb-item" style="display: inline-block!important">
+                  <a class="nav-link" href="#fav">Best Album Art</a>
+                </li>
+                <li class="breadcrumb-item" style="display: inline-block">
+                  <a class="nav-link" href="#naf">Worst Album Art</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+<!-- JUMBOTRON -->
+          <div id="bio" class="jumbotron">
+            <div class="row">
+                <div class="col-12 title">Love Jumbotrons?</div>
+                <div class="col-3"><img id="rock" src="https://cdn2.iconfinder.com/data/icons/hand-gestures-62/512/hand-fingers-sign-gesture-22-512.png" width="100px"></div>
+                <div class="col">Well this is a jumbtron!</div>
+            </div>
+          </div>
+
+
+          <div id="bio" class="container px-0">
+            <div class="row">
+                <div class="col-12 title">What's going on here then?</div>
+                <div class="col-3"><img id="rock" src="https://cdn2.iconfinder.com/data/icons/hand-gestures-62/512/hand-fingers-sign-gesture-22-512.png" width="100px"></div>
+                <div class="col">Ring-ading-a-ling. Oh, what's that noise? It's the sound of great music. It's the sound of me showing you something beautiful. As huge of a music fan as I am, today I will be showing you some of the best and worst of album ART.</div>
+            </div>
+          </div>
+
+
+        <div id="fav" class="container">
+            <div class="row">
+            <div class="col-12 title"> Here's some great Album Art</div>
+            <!-- <div class="col-sm-6 col-md-4 col-lg-3 mx-0 mx-sm-50"><img src="https://www.udiscovermusic.com/wp-content/uploads/2015/10/The-Clash-London-Calling.jpg"><span class="badge badge-pill badge-danger">Rock n roll baby</span><p>The Clash - London Calling(1979)</p></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="https://imgix.ranker.com/user_node_img/72/1439253/original/let-it-bleed-albums-photo-u1?auto=format&fit=crop&fm=pjpg&w=375&q=60&dpr=2"><span class="badge badge-pill badge-danger">Rock n roll baby</span><p>The Rolling Stones - Let It Bleed(1969)</p></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="https://imgix.ranker.com/user_node_img/305/6095545/original/1984-photo-u2?auto=format&fit=crop&fm=pjpg&w=375&q=60&dpr=2"><span class="badge badge-pill badge-danger">Rock n roll baby</span><p>Van Halen - MCMLXXXIV(1984)</p></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="https://imgix.ranker.com/user_node_img/120/2382242/original/whipped-cream-and-other-delights-albums-photo-u2?auto=format&fit=crop&fm=pjpg&w=375&q=60&dpr=2"><span class="badge badge-pill badge-danger">Sweet sweet melodies</span><p>Herb Alpert - Whipped Cream & Other Delights(1965)</p></div> -->
+<!-- FAVOURITE CARDS -->
+        <div class="card bg-dark text-white mx-auto my-2">
+          <img src="https://www.udiscovermusic.com/wp-content/uploads/2015/10/The-Clash-London-Calling.jpg" class="card-img-top" alt="clash" style="width:250px;height:250px; align-self: center;" >
+          <div class="card-body">
+            <span class="badge badge-pill badge-danger">Rock n roll baby</span><p>The Clash - London Calling(1979)</p>
+          </div>
+        </div>
+        <div class="card  bg-dark text-white mx-auto my-2">
+          <img src="https://imgix.ranker.com/user_node_img/72/1439253/original/let-it-bleed-albums-photo-u1?auto=format&fit=crop&fm=pjpg&w=375&q=60&dpr=2" style="width:250px;height:250px; align-self: center;" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="badge badge-pill badge-danger">Rock n roll baby</span><p>The Rolling Stones - Let It Bleed(1969)</p>
+          </div>
+        </div>
+        <div class="card  bg-dark text-white mx-auto my-2">
+          <img src="https://imgix.ranker.com/user_node_img/305/6095545/original/1984-photo-u2?auto=format&fit=crop&fm=pjpg&w=375&q=60&dpr=2" style="width:250px;height:250px; align-self: center;" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="badge badge-pill badge-danger">Rock n roll baby</span><p>Van Halen - MCMLXXXIV(1984)</p>
+          </div>
+        </div>
+        <div class="card bg-dark text-white mx-auto my-2">
+          <img src="https://imgix.ranker.com/user_node_img/120/2382242/original/whipped-cream-and-other-delights-albums-photo-u2?auto=format&fit=crop&fm=pjpg&w=375&q=60&dpr=2" style="width:250px;height:250px; align-self: center;" class="card-img-top" alt="...">
+          <div class="card-body">
+            <span class="badge badge-pill badge-danger">Sweet sweet melodies</span><p>Herb Alpert - Whipped Cream & Other Delights(1965)</p>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- WORST ALBUM LIST -->
+        <div id="naf" class="container">
+            <div class="row">
+            <div class="col-12 title"> Here's some not so great Album Art!</div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="https://static.boredpanda.com/blog/wp-content/uuuploads/worst-album-covers/worst-album-covers-taste-of.jpg"><p>Dick Black - A Taste of Dick Black(2002)</p></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="https://static.boredpanda.com/blog/wp-content/uuuploads/worst-album-covers/worst-album-covers-freddie-gage.jpg"><p>Freddie Gage - All My Friends Are Dead(1960)</p></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="https://static.boredpanda.com/blog/wp-content/uuuploads/worst-album-covers/worst-album-covers-kevin-rowland.jpg"><p>Kevin Rowland - My Beauty(1999)</p></div>
+            <div class="col-sm-6 col-md-4 col-lg-3"><img src="https://static.boredpanda.com/blog/wp-content/uuuploads/worst-album-covers/worst-album-covers-frivolous-five.jpg"><p>The Frivolous Five - Sour Cream & Other Delights(1966)</p></div>
+        </div>
+        </div>
+<!-- TRACKLIST TABLE -->
+        <div class="container">
+          <div class="row">
+            <div class="col-12 title"> London Calling Tracklist!</div></div>
+          <table class="table table-hover table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Tracklist</th>
+                <th scope="col">Song Name</th>
+                <th scope="col">Song Length</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" id="row">#A1</th>
+                <td>London Calling</td>
+                <td>3:19</td>
+                <td><button type="button" class="btn btn-outline-warning" id="button">Delete</button></td>
+              </tr>
+              <tr>
+                <th scope="row">#A2</th>
+                <td>Brand New Cadillac</td>
+                <td>2:08</td>
+                <td><button type="button" class="btn btn-outline-warning">Delete</button></td>
+              </tr>
+              <tr>
+                <th scope="row">#A3</th>
+                <td>Jimmy Jazz</td>
+                <td>3:54</td>
+                <td><button type="button" class="btn btn-outline-warning">Delete</button></td>
+              </tr>
+              <tr>
+                <th scope="row">#A4</th>
+                <td>Hateful</td>
+                <td>2:44</td>
+                <td><button type="button" class="btn btn-outline-warning">Delete</button></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+    <!-- EXERCISE 6
+            Do you have any musician / band you admire or you are a fan of?
+            This section is dedicated to him / her / them!
+            Feel free to experiment in this part of the page.
+        -->
+
+    <!-- EXERCISE 7
+            Just covers!
+            Create a tapestry of album pictures. Every album picture must be "square" (use CSS to do that).
+            Put at least 20 covers (also repeated) to have a nice effect and see how Bootstrap handles it.
+        -->
+
+    <!-- EXERCISE 8
+            Implement a footer with some information / social links
+        -->
+<footer style="text-align: right; font-weight: bold; color: white; padding-right: 15px;">This is the footer.<br>Find me @_tommyLK</footer>
+    <!-- EXTRA:
+            EXERCISE 9
+            Create an album details area that is going to be toggled on and off by clicking on the album image
+        -->
+
+    <!-- EXERCISE 10
+            Add a button to each section. By clicking on it the section body appears (if hidden) or disappears (if visible) 
+            (hint: look for a boostrap component that can handle the job for you. You can always rely on DOM manipulation if you can't find it)
+        -->
+
+    <!--
+         EXERCISE 11
+            Add in the footer a field that counts, on page load, how many ALBUMS there are on the page 
+        -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+       
+<!-- JAVASCRIPT -->
+       <script>
+         const deleteRow = () =>{
+            
+         }
+        </script>
+</body>
+</html>

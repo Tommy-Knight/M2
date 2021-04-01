@@ -470,7 +470,7 @@
         <a href="#">Back to top</a>
       </p>
     </footer>
-
+    
     <script>
       /*
         JS Exercises
@@ -484,7 +484,8 @@
         EX18) Write a function and attach it to the "Newer" button, to add new Blog Post (just div and title)
         EX19) Write a function and attach it to the "Older" button, to remove the last Blog Post
         EX20) Write an alert with the name of the author every time the user hover with the mouse over an author name
-    */
+    */ 
+
       // EX 11
       const addLink = () => {
         const navBar = document.getElementsByTagName("nav")[0]
@@ -562,7 +563,10 @@
       }
       newBlog()
       //EX 19
-      document.querySelectorAll(".blog-pagination a")[0]
+
+      const removeBtn = document.querySelectorAll(".blog-pagination a")[0]
+      
+
     </script>
   </body>
 </html>
