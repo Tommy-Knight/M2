@@ -68,27 +68,75 @@ img {
   margin-bottom: 50px;
   text-align: center;
 }
-.row1{
-  opacity: 1;
-  transition: 1s;
+.btn{
+  transition: all 1s;
 }
-.button1:hover .row1{
-  opacity: 0!important;
+.btn:hover{
+  opacity:0;
+  transition: all 1s;
+}
+
+.box {
+    margin: auto
+}
+
+.card {
+
+}
+
+textarea[name="message"] {
+    resize: none
+}
+
+#e-mail {
+    height: 45px
+}
+
+#message {
+    height: 120px
+}
+
+input.input-box,
+textarea.input-box {
+    background-color: #616161;
+    border: #616161;
+    color: #BDBDBD
+}
+
+input.input-box:focus,
+textarea.input-box:focus {
+    background-color: #000000;
+    color: #BDBDBD
+}
+
+.rm-border:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+form .form-control::-webkit-input-placeholder {
+    color: #9E9E9E
+}
+
+::-moz-placeholder {
+    color: #9E9E9E !important
+}
+
+input.btn-purple {
+    background-color: #5C6BC0;
+    color: #ffffff
 }
     </style>
   </head>
   <body>
-    <!-- EXERCISE 2 
-            Implement a navigation bar using the bootstrap component
-            This navigation bar must link every section in your page
-        -->
        <div id="navBox"> <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
             <a class="navbar-brand" href="#">Tommy's Musical Memoirs</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-              <ul class="navbar-nav mr-auto" ></ul>
+              <ul>
                 <li class="breadcrumb-item" style="display: inline-block!important">
                   <a class="nav-link" href="#bio" >About Me </a>
                 </li>
@@ -177,29 +225,32 @@ img {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row" class="row1">#A1</th>
-                <td class="row1">London Calling</td>
-                <td class="row1">3:19</td>
-                <td><button type="button" class="btn btn-outline-warning button1">Delete</button></td>
+              <tr class="row1">
+                <th>#A1</th>
+                <td>London Calling</td>
+                <td>3:19</td>
+                <td><button type="button" class="btn btn-outline-warning" id="btn1" onclick="deleteRow1()">Delete</button></td>
               </tr>
-              <tr>
+              <tr class="row2">
+                
                 <th scope="row">#A2</th>
                 <td>Brand New Cadillac</td>
                 <td>2:08</td>
-                <td><button type="button" class="btn btn-outline-warning">Delete</button></td>
+                <td><button type="button" class="btn btn-outline-warning" onclick="deleteRow2()">Delete</button></td>
+              </div>
               </tr>
-              <tr>
+              <tr class="row3">
                 <th scope="row">#A3</th>
                 <td>Jimmy Jazz</td>
                 <td>3:54</td>
-                <td><button type="button" class="btn btn-outline-warning">Delete</button></td>
+                <td><button type="button" class="btn btn-outline-warning" onclick="deleteRow3()" >Delete</button></td>
               </tr>
-              <tr>
+              <tr class="row4">
                 <th scope="row">#A4</th>
                 <td>Hateful</td>
                 <td>2:44</td>
-                <td><button type="button" class="btn btn-outline-warning">Delete</button></td>
+                <td><button type="button" class="btn btn-outline-warning" onclick="deleteRow4()" >Delete</button>
+                </div>
               </tr>
             </tbody>
           </table>
@@ -219,7 +270,60 @@ img {
     <!-- EXERCISE 8
             Implement a footer with some information / social links
         -->
-<footer style="text-align: right; font-weight: bold; color: white; padding-right: 15px;">This is the footer.<br>Find me @_tommyLK</footer>
+<footer class="footer" style="text-align: center; font-weight: bold; color: white; padding-right: 15px;">This is the footer.<br>Find me @_tommyLK<br>
+  <ul>
+    <li class="breadcrumb-item" style="display: inline-block!important">
+      <a class="nav-link" href="#bio" >About Me </a>
+    </li>
+    <li class="breadcrumb-item" style="display: inline-block!important">
+      <a class="nav-link" href="#fav">Best Album Art</a>
+    </li>
+    <li class="breadcrumb-item" style="display: inline-block">
+      <a class="nav-link" href="#naf">Worst Album Art</a>
+    </li>
+  </ul> 
+  
+
+  <div class="btn-group">
+    <button type="button" class="btn btn-dark">Contact Us!</button>
+    <button type="button" class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      <span class="sr-only">Toggle Dropdown</span>
+    </button>
+    <div class="dropdown-menu p-0" style="width:500px; color: white;">
+      <div class="bg-light">
+        <div class="container">
+            <div class="row justify justify-content-center">
+                <div class="col-11 col-md-8 col-lg-6 col-xl-5">
+                    <form class="">
+                        <div class="card bg-dark">
+                            <div class="row mt-0">
+                                <div class="col-md-12 ">
+                                    <h4 class="">Contact Us</h4>
+                                    <p>Use the form below to share your questions, ideas, comments and feedback</p>
+                                </div>
+                            </div>
+                            <div class="form-group row mb-3">
+                                <div class="col-md-12 mb-0">
+                                    <p class="mb-1">Email</p> <input id="e-mail" type="text" placeholder="Enter your email" name="email" class="form-control input-box rm-border">
+                                </div>
+                            </div>
+                            <div class="form-group row">
+                                <div class="col-md-12 mb-2">
+                                    <p class="mb-1">Message</p> <textarea id="message" type="text" placeholder="Enter your message" name="message" class="form-control input-box rm-border"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group row justify-content-center mb-0">
+                                <div class="col-md-12 px-3"> <input type="submit" value="Submit" class="btn btn-block btn-purple rm-border"> </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+</footer>
     <!-- EXTRA:
             EXERCISE 9
             Create an album details area that is going to be toggled on and off by clicking on the album image
@@ -239,8 +343,21 @@ img {
        
 <!-- JAVASCRIPT -->
        <script>
-         const deleteRow = () =>{
-            
+         const deleteRow1 = () =>{
+            row1 = document.querySelector(".row1")
+            row1.innerHTML = "<td>Deleted.<td> "
+         }
+         const deleteRow2 = () =>{
+            row2 = document.querySelector(".row2")
+            row2.innerHTML = "<td>Deleted.<td> "
+         }
+         const deleteRow3 = () =>{
+            row3 = document.querySelector(".row3")
+            row3.innerHTML = "<td>Deleted.<td> "
+         }
+         const deleteRow4 = () =>{
+            row4 = document.querySelector(".row4")
+            row4.innerHTML = "<td>Deleted.<td> "
          }
         </script>
 </body>
