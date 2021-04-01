@@ -68,12 +68,12 @@ img {
   margin-bottom: 50px;
   text-align: center;
 }
-#row{
+.row1{
   opacity: 1;
   transition: 1s;
 }
-#button:hover #row{
-  opacity: 0;
+.button1:hover .row1{
+  opacity: 0!important;
 }
     </style>
   </head>
@@ -178,10 +178,10 @@ img {
             </thead>
             <tbody>
               <tr>
-                <th scope="row" id="row">#A1</th>
-                <td>London Calling</td>
-                <td>3:19</td>
-                <td><button type="button" class="btn btn-outline-warning" id="button">Delete</button></td>
+                <th scope="row" class="row1">#A1</th>
+                <td class="row1">London Calling</td>
+                <td class="row1">3:19</td>
+                <td><button type="button" class="btn btn-outline-warning button1">Delete</button></td>
               </tr>
               <tr>
                 <th scope="row">#A2</th>
